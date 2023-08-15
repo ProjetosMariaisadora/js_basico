@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Inscrição</title>
+    <script src="funcao.js"></script>
+</head>
+<body bgcolor=white>
+   <form>
+        <h2 align=center>Cadastro</h2>
+        <div>
+            <p>
+            <input type="button" value=" Digite seu Nome" onclick="nome=prompt('Seu Nome','')" >
+            <input type="button" value=" Digite seu E-mail" onclick="email=prompt('Email','')" >
+            <input type="button" value=" Digite o valor do Saque" onclick="saque=parseInt(prompt('Quanto você deseja sacar?', ''))">
+            <input type="button" value=" Digite o valor do Deposito" onclick="deposito=parseInt(prompt('Quanto você deseja depositar?', ''))">
+            <input type="button" value="Cadastrar" onclick="escrever(this.form.Area)"></p>
+            <p> <textarea rows=10 cols=40 name=Area></textarea></p>
+        </div>
+   </form> 
+</body>
+</html>
