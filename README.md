@@ -1,7 +1,7 @@
 # js_basico
 
 #Funções
- https://projetosmariaisadora.github.io/js_basico/funcoes
+ https://projetosmariaisadora.github.io/js_basico/funcoes/funcoes.html
 
 #Declaração
 
