@@ -9,7 +9,7 @@
 #IMC
 
 #Tabuada
-https://github.com/ProjetosMariaisadora/js_basico/Tabuada/index.html
+ https://projetosmariaisadora.github.io/js_basico/Tabuada
 
 
 
