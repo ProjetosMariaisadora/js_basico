@@ -12,3 +12,4 @@
 
 #Orientação a Objetos https://projetosmariaisadora.github.io/js_basico/orientação.a.objeto/index.html
 
+#Script - Troca Imagem https://projetosmariaisadora.github.io/js_basico/Script_trocaimagem/index.html
