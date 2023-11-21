@@ -1,0 +1,14 @@
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: #836FFF;
+}
+footer{
+    text-align: center;
+    background-color: #F08080;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: black;
+}
