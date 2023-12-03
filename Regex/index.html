@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    
+   
+    <title>Regex</title>
+</head>
+<body>
+        
+      <!-- ======= Regex Oque é? ======= -->   
+      <h1> Regex Oque é?</h1>
+      <nav id="regex" class="regex1">
+          <ul>
+            Regex, ou expressões regulares, refere-se a uma sequência de caracteres que define um padrão de busca. É uma ferramenta poderosa utilizada em processamento de texto para realizar operações como correspondência de padrões, busca, substituição e validação de strings.
+
+            As expressões regulares consistem em caracteres literais (que correspondem exatamente a si mesmos) e caracteres especiais (que representam classes de caracteres, quantificadores, grupos, etc.). Por exemplo, o caractere . em uma expressão regular representa qualquer caractere único, enquanto * indica zero ou mais repetições do elemento anterior.
+    
+            As expressões regulares são amplamente utilizadas em programação, manipulação de dados, busca e substituição de texto em editores de texto avançados, validação de entradas de formulários, extração de informações de documentos de texto, entre outras tarefas.
+    
+            Exemplo simples de uma expressão regular: o padrão \d+ representa um ou mais dígitos consecutivos. Assim, ao aplicar essa expressão a uma string, ela corresponderá a qualquer sequência de dígitos.
+    
+            É importante notar que a sintaxe e o comportamento exato de expressões regulares podem variar um pouco entre linguagens de programação, mas o conceito geral é semelhante.
+          </ul>
+      </nav>
+       <!-- =======  End Regex Oque é? ======= --> 
+
+       <!-- =======  Troca de Imagens ======= --> 
+       <main>
+        <div class="container">
+            <div class="text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <img id="main-image" src="img/regex1.webp"
+                            style="margin-bottom:15px; margin-top: 15px; width: 75%;" class="exibido" alt="...">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/regex2.png" class="img-fluid bottom-image" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/regex3.png" class="img-fluid bottom-image" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/regex4.jpeg" class="img-fluid bottom-image" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+       <!-- ======= End Troca de Imagens ======= --> 
+
+       <!-- ======= Explicação ======= --> 
+        <nav id="explicacao" class="explicacao">
+
+               <h4> Em JavaScript, você pode usar o objeto RegExp para trabalhar com expressões regulares. Aqui está um exemplo simples:</h4>
+        
+             <ul>
+                <li>// Criar uma expressão regular para encontrar números de telefone no formato (123) 456-7890</li>
+                    var regex = /\(\d{3}\) \d{3}-\d{4}/;
+
+                <li>// String de exemplo</li>
+                    var texto = "Entre em contato: (123) 456-7890";
+
+                <li>// Procurar por correspondências na string</li>
+                    var correspondencias = texto.match(regex);
+
+                <li>// Se houver correspondências, imprima o número de telefone encontrado</li>
+                    if (correspondencias) {
+                        var numeroTelefone = correspondencias[0];
+                        console.log("Número de telefone encontrado: " + numeroTelefone);
+                    } else {
+                        console.log("Nenhum número de telefone encontrado.");
+                    }
+            </ul>
+
+                <h4>Em Python, a biblioteca padrão "re" é usada para trabalhar com expressões regulares. Aqui está um exemplo semelhante:</h4>
+        
+            <ul>
+                import re
+
+                <li>//Criar um padrão para encontrar números de telefone no formato (123) 456-7890</li>
+                padrao = re.compile(r'\(\d{3}\) \d{3}-\d{4}')
+
+                <li>//String de exemplo</li>
+                texto = "Entre em contato: (123) 456-7890"
+
+                <li>//Procurar por correspondências na string</li>
+                correspondencias = padrao.search(texto)
+
+                <li>//Se houver correspondências, imprima o número de telefone encontrado</li>
+                if correspondencias:
+                    numero_telefone = correspondencias.group()
+                    print("Número de telefone encontrado:", numero_telefone)
+                else:
+                    print("Nenhum número de telefone encontrado.")
+            </ul>
+
+                <h4>Em C#, você pode usar o namespace System.Text.RegularExpressions. Aqui está um exemplo:</h4>
+
+           <ul>
+            using System;
+            using System.Text.RegularExpressions;
+
+            class Program
+            {
+                static void Main()
+            {
+
+            <li>// Criar uma expressão regular para encontrar números de telefone no formato (123) 456-7890</li>
+             Regex regex = new Regex(@"\(\d{3}\) \d{3}-\d{4}");
+
+            <li>// String de exemplo</li>
+            string texto = "Entre em contato: (123) 456-7890";
+
+            <li>// Procurar por correspondências na string</li>
+            Match correspondencia = regex.Match(texto);
+
+            <li>// Se houver correspondências, imprima o número de telefone encontrado</li>
+                if (correspondencia.Success)
+                
+            {
+                string numeroTelefone = correspondencia.Value;
+                Console.WriteLine("Número de telefone encontrado: " + numeroTelefone);
+            }
+                else
+            {
+                Console.WriteLine("Nenhum número de telefone encontrado.");
+            }
+         }
+        }
+           </ul>
+                <h4>Em PHP, as funções preg_match() e preg_replace() são comumente usadas para expressões regulares. Aqui está um exemplo:</h4>
+           <ul>
+            ?php
+
+            <li>// Criar uma expressão regular para encontrar números de telefone no formato (123) 456-7890</li>
+                 $padrao = '/\(\d{3}\) \d{3}-\d{4}/';
+
+            <li>// String de exemplo</li>
+                $texto = "Entre em contato: (123) 456-7890";
+
+            <li>// Procurar por correspondências na string</li>
+
+            if (preg_match($padrao, $texto, $correspondencias)) {
+                $numeroTelefone = $correspondencias[0];
+                echo "Número de telefone encontrado: " . $numeroTelefone;}
+
+            else {
+                echo "Nenhum número de telefone encontrado.";
+            }
+            ?>
+           </ul>
+        </nav>
+        <!-- ======= End Explicação ======= --> 
+
+        <!-- ======= Jquery======= --> 
+        <nav id="jquery" class="jqueryex">
+
+          <h1>Jquery</h1>
+        
+            <ul>
+                Jquery é uma biblioteca JavaScript rápida, leve e poderosa. Desenvolvida para simplificar a manipulação de documentos HTML, o gerenciamento de eventos, animações e interações AJAX (Asynchronous JavaScript and XML), o jQuery torna o desenvolvimento web mais fácil e eficiente.
+
+                <li><h5>Seleção de Elementos:</h5> jQuery permite selecionar elementos HTML de maneira fácil e eficiente usando seletores similares aos seletores CSS. Isso simplifica a manipulação de elementos na página.</li>
+
+                <li>// Exemplo de seleção de elemento usando jQuery</li>
+                    var paragrafos = $("p");  // Seleciona todos os parágrafos na página
+                    
+                <li><h5>Manipulação de Elementos:</h5> Com o jQuery, você pode facilmente modificar o conteúdo, estilos e atributos dos elementos HTML.</li> 
+
+                <li>// Exemplo de manipulação de conteúdo usando jQuery</li>
+                    $("p").text("Novo conteúdo do parágrafo");
+
+                <li><h5>Eventos:</h5> O jQuery simplifica o manuseio de eventos, como cliques, teclas pressionadas, etc.</li>
+
+                <li>// Exemplo de manipulação de eventos usando jQuery</li>
+                    $("button").click(function() {
+                    alert("Botão clicado!");
+                });
+
+                <li><h5>Animações:</h5> O jQuery facilita a criação de animações e transições suaves em elementos da página.</li>
+
+                <li>// Exemplo de animação usando jQuery</li>
+                    $("div").animate({ marginLeft: "50px" }, "slow");
+            </ul>
+
+        </nav>
+      <!-- ======= End Jquery======= --> 
+        
+       
+    <!-- ======= Formulário======= -->  
+    <nav id="formulario" class="formulario">    
+
+    <h2>Formulário</h2>
+
+    <form  onsubmit="return validarFormulario()" action="">
+        
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Data de Nascimento</label>
+            <input type="data" class="form-control" id="dataNascimento">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Telefone</label>
+            <input type="phone" class="form-control" id="telefone">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="cpf">
+        </div>
+         <div class="botao">
+             <button type="submit" class="btn btn-outline-dark">Enviar</button>
+         </div>
+
+      </form>
+    </nav>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <footer>
+        <a target="_blank" class="footer" href="https://github.com/projetosMariaisadora">&copy; Copyright <strong>Maria Isadora</strong></a>
+    </footer>    
+</body>
+</html>
